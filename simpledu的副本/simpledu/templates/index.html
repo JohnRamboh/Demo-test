@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block body %}
+  {% for course in courses %}
+  <div class = "col-sm-6 col-md-4 course">
+  	<div class = "thumbnail">
+		<a href = "{{ course.url }}" target = "_blank">
+			<img src = "{{ course.image_url }}" alt = "课程">
+			<div class = "caption">
+				<h4 class = "course_name">{{ course.name }}</h4>
+				<p class = "course_description">{{ course.description }}</p>
+			</div>
+		</a>
+	</div>
+  </div>
+  {% endfor %}
+{% endblock %}

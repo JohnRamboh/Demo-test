@@ -1,0 +1,18 @@
+a,
+a:hover,
+a:visted {
+	text-decoration: none;
+	}
+
+.course_name,
+.course_description{
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap
+
+	}
+
+.course img{
+	height: 160px
+
+	}
